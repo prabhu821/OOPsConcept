@@ -10,7 +10,7 @@ namespace PracticeProblem
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect option \n1.Class and Object \n2.Inheritance \n3.Exit");
+                Console.WriteLine("\nSelect option \n1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -26,6 +26,14 @@ namespace PracticeProblem
                         double area1 = rectangle.CalculateArea();
                         rectangle.DisplayInfo();
                         Console.WriteLine("Area: " + area1);
+                        break;
+                    case 3:
+                        Animal animal1 = new Animal();
+                        Animal animal2 = new Dog();
+                        Animal animal3 = new Cat();
+                        animal1.MakeSound(); 
+                        animal2.MakeSound(); 
+                        animal3.MakeSound(); 
                         break;
                     default:
                         flag = false;
