@@ -10,7 +10,7 @@ namespace PracticeProblem
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect option \n1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Exit");
+                Console.WriteLine("\nSelect option \n1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Encapsulation \n5.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -34,6 +34,13 @@ namespace PracticeProblem
                         animal1.MakeSound(); 
                         animal2.MakeSound(); 
                         animal3.MakeSound(); 
+                        break;
+                    case 4:
+                        Employee employee = new Employee();
+                        employee.Name = "John Doe";
+                        employee.Age = 30;
+                        employee.Salary = 500000.00;
+                        employee.DisplayEmployeeInfo();
                         break;
                     default:
                         flag = false;
