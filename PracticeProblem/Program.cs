@@ -10,7 +10,8 @@ namespace PracticeProblem
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect option \n1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Encapsulation \n5.Exit");
+                Console.WriteLine("\nSelect option \n1.Class and Object \n2.Inheritance \n3.Polymorphism \n4.Encapsulation " +
+                    "\n5.Abstraction \n6.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -41,6 +42,14 @@ namespace PracticeProblem
                         employee.Age = 30;
                         employee.Salary = 500000.00;
                         employee.DisplayEmployeeInfo();
+                        break;
+                    case 5:
+                        Shape1 shape1 = new Circle1();
+                        Shape1 shape2 = new Rectangle1();
+                        shape1.Draw();
+                        shape1.Display();
+                        shape2.Draw();
+                        shape2.Display();
                         break;
                     default:
                         flag = false;
